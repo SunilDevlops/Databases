@@ -1,0 +1,22 @@
+The IFNULL function will return the first argument if it is not NULL, otherwise it returns the second argument.
+
+Example: 
+
+Given the table employee as follows:
+
+id	salary
+1	100
+2	200
+3	300
+4	200
+
+
+Implementation:
+
+SELECT
+    IFNULL(
+      (SELECT DISTINCT Salary
+       FROM Employee
+       ORDER BY Salary DESC
+        LIMIT 1 OFFSET 1),
+    NULL) AS SecondHighestSalary
