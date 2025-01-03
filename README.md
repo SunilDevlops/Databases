@@ -1,2 +1,3 @@
 # Databases
-<h1>IFNULL</h1>
+<h6>IFNULL</h6>
+<h6>DenseRank</h6>
